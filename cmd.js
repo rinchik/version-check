@@ -8,8 +8,11 @@ var params = {
         "token": "",
         "room": 1
     },
-    console: true,
-    path: ''
+    "output": {
+        "console": false,
+        "hipchat": true
+    },
+    "path": ''
 }
 
 moduleVersionChecker(params);

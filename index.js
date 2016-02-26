@@ -5,16 +5,18 @@ var Hipchatter = require('./output/hipchat');
 
 function moduleVersionChecker (params) {
 
-    var console = params.console;
+    var toConsole = params.output.console;
+    var toHipchat = params.output.hipchat;
     var hipchat = new Hipchatter(params.hipchat);
     var path = params.path ? params.path : process.cwd();
 
     return npmCheck({
         "path": path
     }).then(function (result) {
-        if (console) {
+        if (toConsole) {
             cli(result);
-        } else {
+        }
+        if (toHipchat) {
             hipchat(result);
         }
     });

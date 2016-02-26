@@ -42,13 +42,18 @@ var params = {
         "token": "",
         "room": 1
     },
-    console: false, //required
+    "output": {
+        "console": false,
+        "hipchat": true
+    },
     path: ''
 }
 ```
 
 
 `console` - if true, outputs result into console
+
+`hipchat` - if true, outputs sends result to HipChat
 
 `path` - path to the directory where to check
 
