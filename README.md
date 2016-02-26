@@ -12,7 +12,7 @@
 ### Installation
 
 ```bash
-$ npm install module-version-check
+$ npm install -g module-version-check
 ```
 
 ### Usage
@@ -21,61 +21,36 @@ $ npm install module-version-check
 
 
 ```bash
-$ npm run start
-```
-
-#### Check in path and send result to the console
-
-
-```bash
-$ npm run start -- -p ~/path/to/the/project
+$ module-version-check
 ```
 
 ![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/9755cbff-ea5d-4b39-a34c-8f996f23044b/00000098.png)
 
-#### Check in 'cwd' and result to the HipChat
+#### Node HipChat api
 
 
-```bash
-$ npm run start -- -c
+```js
+var moduleVersionChecker = require('module-version-check');
+moduleVersionChecker(params);
 ```
 
-or
-
-```bash
-$ npm run start -- --hipchat
+Params:
+```js
+var params = {
+    "hipchat": {
+        "color": "red",
+        "token": "",
+        "room": 1
+    },
+    console: false, //required
+    path: ''
+}
 ```
 
-#### Check in path and result to the HipChat
 
+`console` - if true, outputs result into console
 
-```bash
-$ npm run start -- -c -p ~/path/to/the/project
-```
-
-or
-
-```bash
-$ npm run start -- --hipchat -p ~/path/to/the/project
-```
+`path` - path to the directory where to check
 
 ![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/e00c1769-af41-46e8-8588-4aa43bdec5c4/00000099.png)
-
-
-To modify HipCHat end-point yu can edit HipChat section in `config.js`
-
-
-#### Help
-
-```bash
-$ npm run version-check -- -h [--help]
-
-  Usage: version-check [options]
-
-  Options:
-
-    -h, --help     output usage information
-    -V, --version  output the version number
-    -c, --hipchat  send results to HipChat
-```
 

@@ -3,15 +3,30 @@
   "version": "1.0.6",
   "description": "Utility module to check installed npm-modules versions and reports outdated",
   "author": "Rinat Ussenov <rinat.ussenov@gmail.com>",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "sh check.sh"
+  },
+  "bin": {
+    "module-version-check": "cmd.js"
   },
   "dependencies": {
     "cli-table": "^0.3.1",
     "colors": "^1.1.2",
-    "commander": "^2.9.0",
     "hipchatter": "^0.2.0",
     "npm-check": "^4.1.4"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rinchik/version-check.git"
+  },
+  "keywords": [
+    "version"
+  ],
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rinchik/version-check/issues"
+  },
+  "homepage": "https://github.com/rinchik/version-check#readme"
 }

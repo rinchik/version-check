@@ -1,8 +1,0 @@
-{
-    "version": "0.0.1",
-    "hipchat": {
-        "color": "red",
-        "token": "",
-        "room": 1
-    }
-}

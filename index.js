@@ -1,32 +1,23 @@
-#!/usr/bin/env node
 
-var program = require('commander');
 var npmCheck = require('npm-check');
-var config = require('./config.json');
-
-var Hipchatter = require('./output/hipchat');
 var cli = require('./output/cli');
+var Hipchatter = require('./output/hipchat');
 
-var hipchat = new Hipchatter(config.hipchat);
+function moduleVersionChecker (params) {
 
-program
-    .version(config.version)
-    .option('-c, --hipchat', 'send results to HipChat')
-    .option('-p, --path', 'path to the project where version-check checks')
-    .parse(process.argv);
+    var console = params.console;
+    var hipchat = new Hipchatter(params.hipchat);
+    var path = params.path ? params.path : process.cwd();
 
-var path = program.path && program.args ? program.args[0] : './';
-
-function versionCheck() {
     return npmCheck({
-            "path": path
-        }).then(function (result) {
-            if (program.hipchat) {
-                hipchat(result);
-            } else {
-                cli(result);
-            }
-        });
+        "path": path
+    }).then(function (result) {
+        if (console) {
+            cli(result);
+        } else {
+            hipchat(result);
+        }
+    });
 }
 
-module.exports = versionCheck;
+module.exports = moduleVersionChecker;
