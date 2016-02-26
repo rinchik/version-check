@@ -17,12 +17,16 @@ program
 
 var path = program.path && program.args ? program.args[0] : './';
 
-npmCheck({
-    "path": path
-}).then(function (result) {
-    if (program.hipchat) {
-        hipchat(result);
-    } else {
-        cli(result);
-    }
-});
+function versionCheck() {
+    return npmCheck({
+            "path": path
+        }).then(function (result) {
+            if (program.hipchat) {
+                hipchat(result);
+            } else {
+                cli(result);
+            }
+        });
+}
+
+module.exports = versionCheck;
