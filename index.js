@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var program = require('commander');
 var npmCheck = require('npm-check');
 var config = require('./config.json');
