@@ -3,6 +3,6 @@
     "hipchat": {
         "color": "red",
         "token": "",
-        "room":
+        "room": 1
     }
 }

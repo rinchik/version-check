@@ -12,7 +12,7 @@
 
 ### Usage
 
-`check.sh` is added to the `package.json` in saks.com root.
+Add `check.sh` as `version-check` to the scripts in `package.json` (assuming you want `version-check` in your `root/bin` directory).
 
 #### Send result to the console
 
@@ -41,6 +41,9 @@ $ npm run version-check -- --hipchat
 
 
 TO modify HipCHat end-point yu can edit HipChat section in `config.js`
+
+#### Run as node app
+`git clone` this repo and run `npm run start`
 
 #### Help
 

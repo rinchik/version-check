@@ -2,7 +2,10 @@
   "name": "npm-modules-version-check",
   "version": "1.0.0",
   "description": "Utility module to check installed npm-modules versions and reports outdated",
-  "author": "Rinat Ussenov <rinat_ussenov@s5a.com>",
+  "author": "Rinat Ussenov <rinat.ussenov@gmail.com>",
+  "scripts": {
+    "start": "sh check.sh"
+  },
   "dependencies": {
     "cli-table": "^0.3.1",
     "colors": "^1.1.2",
