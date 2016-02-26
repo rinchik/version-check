@@ -9,6 +9,11 @@
 * Provides a link to the package's documentation so you can decide if you want the update.
 * You can send output to the HihChat Room or output to the console
 
+### Installation
+
+```bash
+$ npm install module-version-check
+```
 
 ### Usage
 

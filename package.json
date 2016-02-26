@@ -1,8 +1,9 @@
 {
-  "name": "version-check",
+  "name": "module-version-check",
   "version": "1.0.3",
   "description": "Utility module to check installed npm-modules versions and reports outdated",
   "author": "Rinat Ussenov <rinat.ussenov@gmail.com>",
+  "main": "index.js",
   "scripts": {
     "start": "sh check.sh"
   },
