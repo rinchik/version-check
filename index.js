@@ -10,10 +10,14 @@ var hipchat = new Hipchatter(config.hipchat);
 program
     .version(config.version)
     .option('-c, --hipchat', 'send results to HipChat')
+    .option('-p, --path', 'path to the project where version-check checks')
     .parse(process.argv);
 
-npmCheck({}).then(function (result) {
+var path = program.path && program.args ? program.args[0] : './';
 
+npmCheck({
+    "path": path
+}).then(function (result) {
     if (program.hipchat) {
         hipchat(result);
     } else {

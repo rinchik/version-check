@@ -1,6 +1,6 @@
 ## version-check
 
-> Check for outdated dependencies.
+> Check for outdated `npm` dependencies.
 
 
 
@@ -12,38 +12,53 @@
 
 ### Usage
 
-Add `check.sh` as `version-check` to the scripts in `package.json` (assuming you want `version-check` in your `root/bin` directory).
-
-#### Send result to the console
+#### Check `cwd` and send result to the console
 
 
 ```bash
-$ npm run version-check
+$ npm run start
+```
+
+#### Check in path and send result to the console
+
+
+```bash
+$ npm run start -- -p ~/path/to/the/project
 ```
 
 ![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/9755cbff-ea5d-4b39-a34c-8f996f23044b/00000098.png)
 
-#### Send result to the HipChat
+#### Check in 'cwd' and result to the HipChat
 
 
 ```bash
-$ npm run version-check -- -c
+$ npm run start -- -c
 ```
 
 or
 
 ```bash
-$ npm run version-check -- --hipchat
+$ npm run start -- --hipchat
 ```
 
+#### Check in path and result to the HipChat
+
+
+```bash
+$ npm run start -- -c -p ~/path/to/the/project
+```
+
+or
+
+```bash
+$ npm run start -- --hipchat -p ~/path/to/the/project
+```
 
 ![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/e00c1769-af41-46e8-8588-4aa43bdec5c4/00000099.png)
 
 
-TO modify HipCHat end-point yu can edit HipChat section in `config.js`
+To modify HipCHat end-point yu can edit HipChat section in `config.js`
 
-#### Run as node app
-`git clone` this repo and run `npm run start`
 
 #### Help
 

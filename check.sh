@@ -5,4 +5,4 @@ if [ ! -d "./node_modules" ]; then
 fi
 
 
-node ./index.js $1
+node ./index.js $1 $2
