@@ -7,7 +7,7 @@
 ### Features
 * Tells you what's out of date.
 * Provides a link to the package's documentation so you can decide if you want the update.
-* You can send output to the HihChat Room or output to the console
+* You can send output to the HipChat Room or output to the console
 
 ### Installation
 
@@ -37,7 +37,7 @@ moduleVersionChecker(params).then(function(results){
 });
 ```
 
-Params:
+**Params**:
 ```js
 var params = {
     "hipchat": {
