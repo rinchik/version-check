@@ -24,7 +24,7 @@ $ npm install -g module-version-check
 $ module-version-check
 ```
 
-![console](https://raw.githubusercontent.com/rinchik/binary/master/docs/module-version-check/hipchat.png)
+![console](https://raw.githubusercontent.com/rinchik/binary/master/docs/module-version-check/console.png)
 
 #### Node HipChat api
 
