@@ -24,7 +24,7 @@ $ npm install -g module-version-check
 $ module-version-check
 ```
 
-![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/9755cbff-ea5d-4b39-a34c-8f996f23044b/00000098.png)
+![console](https://raw.githubusercontent.com/rinchik/binary/master/docs/module-version-check/hipchat.png)
 
 #### Node HipChat api
 
@@ -60,5 +60,5 @@ var params = {
 
 `path` - path to the directory where to check
 
-![cli](http://content.screencast.com/users/rinat.ussenov/folders/Jing/media/e00c1769-af41-46e8-8588-4aa43bdec5c4/00000099.png)
+![hipchat](https://raw.githubusercontent.com/rinchik/binary/master/docs/module-version-check/hipchat.png)
 
