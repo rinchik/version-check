@@ -14,7 +14,8 @@
     "cli-table": "^0.3.1",
     "colors": "^1.1.2",
     "hipchatter": "^0.2.0",
-    "npm-check": "^4.1.4"
+    "npm-check": "^4.1.4",
+    "when": "^3.7.7"
   },
   "devDependencies": {},
   "repository": {

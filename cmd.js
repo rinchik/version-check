@@ -9,8 +9,8 @@ var params = {
         "room": 1
     },
     "output": {
-        "console": false,
-        "hipchat": true
+        "console": true,
+        "hipchat": false
     },
     "path": ''
 }

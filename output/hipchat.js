@@ -2,7 +2,7 @@ var Hipchatter = require('hipchatter');
 var hipchatter = new Hipchatter();
 
 function hipchat(config) {
-    var room = config.room; // FE Devs - AEM
+    var room = config.room;
 
     var params = {
         color: config.color,

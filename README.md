@@ -31,7 +31,10 @@ $ module-version-check
 
 ```js
 var moduleVersionChecker = require('module-version-check');
-moduleVersionChecker(params);
+
+moduleVersionChecker(params).then(function(results){
+    // Do something else with detailed results here
+});
 ```
 
 Params:
