@@ -13,7 +13,7 @@ function hipchat(config) {
     return function (result) {
         for (var key in result) {
             var module = result[key];
-            params.message = '<strong>Oudated</strong>: ' + key + ',' +
+            params.message = 'Oudated: <strong>' + key + '</strong>,' +
                 ' installed: <strong>' + module.installed + '</strong>,' +
                 ' latest: <strong>' + module.latest + '</strong>,' +
                 ' <a href="' + module.homepage + '">info</a>';
