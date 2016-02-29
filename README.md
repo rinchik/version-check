@@ -1,4 +1,4 @@
-## version-check
+## module-version-check
 
 > Check for outdated `npm` dependencies.
 
