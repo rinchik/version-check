@@ -23,7 +23,11 @@
     "url": "git+https://github.com/rinchik/version-check.git"
   },
   "keywords": [
-    "version"
+    "version",
+    "hipchat",
+    "npm-check",
+    "module-check",
+    "report"
   ],
   "license": "ISC",
   "bugs": {
