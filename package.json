@@ -1,6 +1,6 @@
 {
   "name": "module-version-check",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "description": "Utility module to check installed npm-modules versions and report outdated",
   "author": "Rinat Ussenov <rinat.ussenov@gmail.com>",
   "main": "./index.js",
